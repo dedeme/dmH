@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.2.0">
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta http-equiv="Cache-Control" content=
+  "no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name='lang' content='en'>
+  <meta name='author' content='ºDeme.'>
+  <link rel='stylesheet' href='http://localhost/notes.css' type='text/css'>
+  <style>
+    td {width:20%;text-align:left;white-space: nowrap;}
+    h4 {font-family:monospace}
+  </style>
+  <title></title>
+</head>
+<body style="margin-right: 0px; margin-left: 0px;">
+  <div class="subtitle">
+    io
+  </div>
+  <hr>
+  <table class="main">
+    <tr>
+      <td class="ix">
+        <a href="#aopen">aopen</a>
+      </td>
+      <td class="ix">
+        <a href="#append">append</a>
+      </td>
+      <td class="ix">
+        <a href="#cd">cd</a>
+      </td>
+      <td class="ix"></td>
+      <td class="ix"></td>
+    </tr>
+  </table>
+  <hr>
+  <h4 id="aopen">aopen(path : String) : File</h4>
+  <table>
+    <tr>
+      <td>
+        <pre>File.new(path, "a")</pre>
+      </td>
+    </tr>
+  </table>Opens path in append mode
+  <hr>
+  <h4 id="append">append(path : String, text : String)</h4>
+  <pre>File.open(path, "a") do |file|
+  file.print(text)</pre>Append text to path
+  <hr>
+  <h4 id="cd">cd(path : String)</h4>
+  <pre>Dir.cd path</pre>Changes the current working directory of the process
+  to the given string path. 
+  <script>
+    for (let x = 0; x < 15; x++)
+      document.write("<p>&nbsp;<\/p>");
+  </script>
+</body>
+</html>

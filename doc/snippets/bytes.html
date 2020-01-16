@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+  <meta http-equiv="Cache-Control"
+    content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name='lang' content='en' />
+  <meta name='author' content='ºDeme.' />
+  <link rel='stylesheet' href='http://localhost/notes.css' type='text/css' />
+<style>
+td {width:20%;text-align:left;white-space: nowrap;}
+h4 {font-family:monospace}
+</style>
+</head>
+  <body style="margin-right: 0px; margin-left: 0px;">
+  <div class="subtitle">bytes</div>
+  <hr>
+  <table>
+  <tr>
+    <td><a href="#cat">cat</a></td>
+
+
+  </tr>
+  </table>
+  <hr>
+  <h4 id="cat">cat(bs1 : Bytes, bs2 : Bytes) : Bytes</h4>
+  <pre>
+r = Bytes.new(bs1.size + bs2.size)
+r.copy_from(bs1)
+r[bs1.size, bs2.size].copy_from(bs2)
+r</pre>
+  Adds bs1 to bs2
+
+  <script>
+    for (let x = 0; x < 15; x++)
+      document.write("<p>&nbsp;</p>");
+  </script>
+  </body>
+</html>
