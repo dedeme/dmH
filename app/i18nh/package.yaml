@@ -1,14 +1,13 @@
-name:                tests
+name:                i18nh
 version:             0.1.0.0
 github:              "githubuser/tests"
 license:             BSD3
 author:              "Author name here"
 maintainer:          "example@example.com"
-copyright:           "2018 Author name here"
+copyright:           "2020 Author name here"
 
 extra-source-files:
 - README.md
-- ChangeLog.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -23,9 +22,9 @@ dependencies:
 - base >= 4.7 && < 5
 
 executables:
-  tests-exe:
+  i18nh:
     main:                Main.hs
-    source-dirs:         app
+    source-dirs:         [src]
     ghc-options:
     - -threaded
     - -rtsopts
@@ -34,9 +33,9 @@ executables:
     - libdmh
 
 tests:
-  tests-test:
+  i18nh-test:
     main:                Spec.hs
-    source-dirs:         test
+    source-dirs:         [test, src]
     ghc-options:
     - -threaded
     - -rtsopts

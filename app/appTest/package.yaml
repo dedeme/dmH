@@ -1,13 +1,14 @@
-name:                fleas
-version:             2018.11
-github:              "githubuser/fleas"
-license:             GPL-3
-author:              "ºDeme"
+name:                appTest
+version:             0.1.0.0
+github:              "githubuser/tests"
+license:             BSD3
+author:              "Author name here"
 maintainer:          "example@example.com"
-copyright:           "2018 ºDeme"
+copyright:           "2018 Author name here"
 
 extra-source-files:
 - README.md
+- ChangeLog.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -20,33 +21,25 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
-- libdmh
-- libmarketh
-- bytestring
-- utf8-string
-- array
 
 executables:
-  hfleas:
+  appTest:
     main:                Main.hs
-    source-dirs:         app
+    source-dirs:         [src]
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - fleas
-
-library:
-  source-dirs: src
+    - libdmh
 
 tests:
-  fleas-test:
+  appTest-test:
     main:                Spec.hs
-    source-dirs:         test
+    source-dirs:         [test, src]
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - fleas
+    - libdmh
