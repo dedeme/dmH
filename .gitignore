@@ -1,6 +1,6 @@
-lib/
+lib/libdmh/
 *.geany
-.stack-work/
+.stack-work
 *.cabal
 *~
 
